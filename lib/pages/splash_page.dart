@@ -1,9 +1,9 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:my_chat_app/pages/chat_page.dart';
-import 'package:my_chat_app/pages/register_page.dart';
-import 'package:my_chat_app/utils/constants.dart';
+import 'package:flutter_chat_app/pages/chat_page.dart';
+import 'package:flutter_chat_app/pages/register_page.dart';
+import 'package:flutter_chat_app/utils/constants.dart';
 
 /// ログイン状態に応じてユーザーをリダイレクトするページ
 class SplashPage extends StatefulWidget {

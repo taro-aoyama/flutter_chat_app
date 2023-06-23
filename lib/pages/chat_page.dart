@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'package:my_chat_app/models/message.dart';
-import 'package:my_chat_app/models/profile.dart';
-import 'package:my_chat_app/pages/register_page.dart';
-import 'package:my_chat_app/utils/constants.dart';
+import 'package:flutter_chat_app/models/message.dart';
+import 'package:flutter_chat_app/models/profile.dart';
+import 'package:flutter_chat_app/pages/register_page.dart';
+import 'package:flutter_chat_app/utils/constants.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart';
 
@@ -239,7 +239,10 @@ class _ChatBubble extends StatelessWidget {
                 : Colors.grey[300],
             borderRadius: BorderRadius.circular(8),
           ),
-          child: Text(message.content),
+          child: Text(message.content,
+              style: TextStyle(
+                color: message.isMine ? Colors.white : Colors.black,
+              )),
         ),
       ),
       const SizedBox(width: 12),
