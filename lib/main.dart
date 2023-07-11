@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const primaryColor = Color.fromRGBO(41, 105, 234, 1);
-    // const primaryColor = Color.fromRGBO(214, 0, 0, 1);
+    // const primaryColor = Color.fromRGBO(41, 105, 234, 1);
+    const primaryColor = Color.fromRGBO(214, 0, 0, 1);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'チャットアプリデモ',
